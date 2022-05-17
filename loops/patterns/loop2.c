@@ -2,9 +2,9 @@
 int main()
 {
 int i,j,k;
-for(i=1;i<=4;i++)
+for(i=1;i<=5;i++)
  {
-   for(j=i;j<=4;j++)
+   for(j=i;j<=5;j++)
    {
     printf(" ");
    }
@@ -14,15 +14,15 @@ for(i=1;i<=4;i++)
   }
    printf("\n");
 }
-
-for(i=0;i<=5;i++)
- {
-  for(j=4;j>=i;j--)
-   {
-     printf("*");
-   }
-  printf("\n");
- }
 return 0;
 }
+/*output:
+     *
+    **
+   ***
+  ****
+ *****
+*/
+
+   
 
