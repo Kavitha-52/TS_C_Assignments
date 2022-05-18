@@ -1,28 +1,26 @@
-/*
-WAP to implement selection sort 
-*/
+//WAP to implement selection sort 
 
 /*  Time Complexity: O(n2) as there are two nested loops  */
 
 #include <stdio.h>
 
-void swap(int *xp, int *yp)
+void swap(int *x, int *y)
 {
-	int temp = *xp;
-	*xp = *yp;
-	*yp = temp;
+	int temp = *x;
+	*x = *y;
+	*y = temp;
 }
 
 void selection_Sort(int arr[], int n)
 {
-	int i, j, min_idx;
+	int i, j, min;
 	for (i = 0; i < n-1; i++)
 	{
-		min_idx = i;
-		for (j = i+1; j < n; j++)
-		if (arr[j] < arr[min_idx])
-			min_idx = j;
-		swap(&arr[min_idx], &arr[i]);
+	  min = i;
+	  for (j = i+1; j < n; j++)
+	    if (arr[j] < arr[min])
+	      min= j;
+	    swap(&arr[min],&arr[i]);
 	}
 }
 
@@ -34,8 +32,8 @@ int main()
 	int i,arr[size];
 	printf("Enter an array:\n");
 	for(i=0;i<size;i++)
-		scanf("%d",&arr[i]);
-
+	    scanf("%d",&arr[i]);
+             
 	selection_Sort(arr, size);
 
 	printf("Sorted array: \n");
