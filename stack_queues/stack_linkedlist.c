@@ -13,6 +13,22 @@ newnode->data=x;
 newnode->next=top;
 top=newnode;
 }
+
+/*void push()
+{
+int x;
+struct node *newnode;
+newnode=(struct node *)malloc(sizeof(struct node));
+printf("enter element:\n");
+scanf("%d",&x);
+new->data=x;
+new->link=top;
+top=newnode;
+}
+
+*/
+
+
 void pop()
 {
 struct node *temp;
