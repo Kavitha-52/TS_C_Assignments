@@ -40,5 +40,4 @@ printf("\n After sortinh array elements are :\n");
 bubble_sort(a,n);
 return 0;
 }
-© 2022 GitHub, Inc.
-Terms
+
